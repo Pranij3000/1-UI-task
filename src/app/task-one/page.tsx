@@ -35,7 +35,7 @@ export default function page() {
                   <BasicCarousel>
                     <CarouselItem>
                       <div className="relative h-full">
-                        <div className="text-wrapper relative z-1 max-w-60 ml-auto pt-14 pr-6">
+                        <div className="text-wrapper relative z-1 max-w-60 ml-auto pt-14 mr-6">
                           <p className=" text-white font-nohemi text-[20px] leading-[120%]">Clarity unlocked—stickers, sips, and skills all in one go!</p>
                         </div>
                         <div className="bg-image absolute aspect-482/323 w-[85%] left-6 bottom-0">
@@ -71,7 +71,7 @@ export default function page() {
                   <BasicCarousel>
                     <CarouselItem>
                       <div className="relative h-full">
-                        <div className="text-wrapper relative z-1 max-w-68 mr-auto pt-9 pl-10 md:pl-20">
+                        <div className="text-wrapper relative z-1 max-w-60 mr-auto pt-9 ml-10 md:ml-20">
                           <p className=" text-white font-nohemi text-[20px] leading-[120%]">Focused faces—learning mode: ON!</p>
                         </div>
                         <div className="bg-image absolute aspect-1590/909 w-[90%] right-0 bottom-0">
