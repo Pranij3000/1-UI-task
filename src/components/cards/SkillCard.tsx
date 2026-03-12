@@ -38,11 +38,11 @@ export default function SkillCard({ defaultInfo, imagePosition = "left", imageCl
           </p>
         </div>
         <div className={`absolute animate-card ${imageClass}`}>
-          <Image
+          <img
             src={defaultInfo.image}
             alt=""
-            fill
-          ></Image>
+            className="w-full h-auto"
+          />
         </div>
       </div>
     </>
