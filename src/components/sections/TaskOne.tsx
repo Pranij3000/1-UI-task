@@ -5,7 +5,7 @@ import AnimatedSkillCard from "@/src/components/cards/AnimatedSkillCard";
 import { CarouselItem } from "@/components/ui/carousel";
 import BasicCarousel from "@/src/components/ui/BasicCarousel";
 
-export default function page() {
+export default function TaskOne() {
   return (
     <>
       <section className="task-one overflow-hidden py-15">
@@ -17,7 +17,7 @@ export default function page() {
             </h1>
           </div>
           <div className="cards-wrapper grid grid-cols-2 gap-x-8 gap-y-10">
-            <div className="col-span-2 md:col-span-1">
+            <div className="col-span-2 md:col-span-1 relative z-1">
               <AnimatedSkillCard
                 Card={
                   <SkillCard
@@ -102,15 +102,6 @@ export default function page() {
                   </BasicCarousel>
                 </div>
               </AnimatedSkillCard>
-
-              {/* <AnimationWrapper>
-                <SkillCard
-                  defaultInfo={Skills[1]}
-                  textMaxWidth="351px"
-                  imageClass="aspect-180/367 right-0 lg:right-8 top-3.5 w-30 lg:w-45"
-                  imagePosition="right"
-                />
-              </AnimationWrapper> */}
             </div>
             <div className="col-span-2 md:col-span-1">
               <SkillCard

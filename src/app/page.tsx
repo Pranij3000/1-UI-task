@@ -1,18 +1,11 @@
-import Link from "next/link";
+import TaskOne from "../components/sections/TaskOne";
+import TaskTwo from "../components/sections/TaskTwo";
+
 export default function Home() {
   return (
     <>
-      <section>
-        <ul>
-          <li>
-            <Link href="/task-one">Task One</Link>
-          </li>
-
-          <li>
-            <Link href="/task-two">Task Two</Link>
-          </li>
-        </ul>
-      </section>
+      <TaskOne />
+      <TaskTwo />
     </>
   );
 }

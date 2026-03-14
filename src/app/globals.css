@@ -16,7 +16,8 @@
   --font-nohemi: "Nohemi", sans-serif;
   --color-primary: #1da077;
 
-  --animate-card: card 2s ease-in-out infinite;
+  --animate-card: card 1.5s ease-in-out infinite;
+  --animate-arrow: arrow 1s ease-in-out infinite;
 
   @keyframes card {
     0%,
@@ -24,7 +25,17 @@
       transform: translateY(0);
     }
     50% {
-      transform: translateY(16px);
+      transform: translateY(8px);
+    }
+  }
+
+  @keyframes arrow {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(8px);
     }
   }
 }

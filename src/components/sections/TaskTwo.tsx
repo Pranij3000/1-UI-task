@@ -1,11 +1,11 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import { Class } from "../../data/Classes";
 import ClassCard from "@/src/components/cards/ClassCard";
 
-export default function page() {
+export default function TaskTwo() {
   const [active, setActive] = useState<number>(0);
   const [prevActive, setPrevActive] = useState<number>(0);
 
