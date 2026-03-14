@@ -2,6 +2,7 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef, useState } from "react";
+import AnimatedArrowButton from "../buttons/AnimatedArrowButton";
 
 const courseLogo = [
   {
@@ -286,23 +287,17 @@ export default function ClassCard({ info, isActive, setActive, index, prevIndex,
         <div className="content-wrapper relative z-1 px-9 pt-10 pb-5 overflow-hidden">
           <div className="course-detail h-60.5 relative">
             <div className="active-detail pb-16 flex flex-col gap-5 h-full justify-between">
-              <div className="view-button-wrapper w-fit ml-auto">
-                <button
-                  onMouseOver={() => isButtonHovered(true)}
-                  onMouseLeave={() => isButtonHovered(false)}
-                  className="flex items-center gap-2 cursor-pointer"
-                >
-                  <span className="font-outfit font-semibold text-[18px] text-white">View all Courses</span>
-                  <div className={`icon-wrapper aspect-square w-5 ${buttonHover && "animate-arrow"}`}>
-                    <img
-                      src="/images/arrow-right-white.png"
-                      alt=""
-                      className="w-full h-auto"
-                    />
-                  </div>
-                </button>
+              <div
+                onMouseOver={() => isButtonHovered(true)}
+                onMouseLeave={() => isButtonHovered(false)}
+                className="view-button-wrapper w-fit ml-auto"
+              >
+                <AnimatedArrowButton
+                  text="View all Courses"
+                  buttonHover={buttonHover}
+                />
               </div>
-              <div className={`course-container`}>
+              <div className="course-container">
                 <div className="course-icon-wrapper max-w-115 mx-auto flex items-center justify-between gap-5">
                   {courseLogo.map((item, index) => (
                     <div
@@ -321,7 +316,7 @@ export default function ClassCard({ info, isActive, setActive, index, prevIndex,
               </div>
             </div>
             <div className="top-course-title absolute w-[218px] h-[178px] bottom-6">
-              <div className="wrapper -rotate-90 ">
+              <div className="title-wrapper -rotate-90">
                 <h2 className=" font-outfit leading-none mb-3 font-bold text-[32px] text-dark-pink">{info.title}</h2>
                 <p className="font-outfit leading-[120%] text-dark-pink">{info.description}</p>
               </div>
