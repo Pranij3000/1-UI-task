@@ -8,7 +8,7 @@ import BasicCarousel from "@/src/components/ui/BasicCarousel";
 export default function TaskOne() {
   return (
     <>
-      <section className="task-one overflow-hidden py-15">
+      <section className="task-one overflow-hidden py-30">
         <div className="container max-w-[1253px] px-5 mx-auto">
           <div className="title-wrapper mb-7 md:mb-12">
             <span className="font-medium text-[16px] md:text-[24px] leading-none">Your SkillShikshya Journey</span>

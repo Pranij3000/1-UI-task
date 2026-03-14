@@ -14,7 +14,7 @@ export default function TaskTwo() {
     setActive(index);
   };
   return (
-    <section className="task-two overflow-hidden py-15">
+    <section className="task-two overflow-hidden py-30">
       <div className="container max-w-314 px-5 mx-auto">
         <div className="title-wrapper mb-7 md:mb-12">
           <span className="font-medium text-[16px] md:text-[24px] leading-none">Explore our classes and master trending skills!</span>

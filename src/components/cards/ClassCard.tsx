@@ -283,7 +283,7 @@ export default function ClassCard({ info, isActive, setActive, index, prevIndex,
         <div className="background-wrapper absolute inset-0 rounded-[32px] overflow-hidden">
           <div className="background-pink absolute left-0 top-full aspect-square bg-light-pink rounded-full translate-x-[-50%] translate-y-[-50%]" />
         </div>
-        <div className="content-wrapper relative z-1 px-9 pt-10 overflow-hidden">
+        <div className="content-wrapper relative z-1 px-9 pt-10 pb-5 overflow-hidden">
           <div className="course-detail h-60.5 relative">
             <div className="active-detail pb-16 flex flex-col gap-5 h-full justify-between">
               <div className="view-button-wrapper w-fit ml-auto">
