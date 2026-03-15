@@ -3,7 +3,7 @@ export default function ArrowButton({ onClick, direction = "right" }: { onClick:
   return (
     <button
       onClick={onClick}
-      className="cursor-pointer p-2 md:p-4 bg-[#FAFAFA] aspect-square rounded-full shadow-[inset_0px_6px_15px_-2px_#10182814,0px_6px_15px_-2px_#10182814,0px_4px_4px_0px_#00000040]"
+      className="cursor-pointer p-2 md:p-4 bg-[#FAFAFA] aspect-square rounded-full shadow-[0_5px_11px_-1px_rgba(16,24,40,0.18)]"
     >
       <Image
         src="/images/arrow-right.svg"
